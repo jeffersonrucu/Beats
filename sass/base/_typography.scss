@@ -1,1 +1,65 @@
+.title-banner-default{
+    font-size: $title-size-default;
+    line-height: 43px;
+    font-weight: bold;
+}
 
+.title-default{
+    font-size: $title-smartphone-default;
+
+    @include media-breakpoint-up(md) { 
+        font-size: $title-size-default;
+        font-weight: 400;
+        line-height: 55px;
+
+    }
+}
+
+.title-primary{
+    font-size: $title-smartphone-default;
+    font-weight: bold;
+    line-height: 55px;
+
+    @include media-breakpoint-up(md) { 
+        font-size: $title-size-primary;
+    }
+
+}
+
+.title-money{
+    font-size: $title-smartphone-default;
+    font-weight: 400;
+    line-height: 55px;
+
+    @include media-breakpoint-up(md) { 
+        font-size: $title-size-default;
+        line-height: 49px;
+        font-style: normal;
+        font-weight: normal;        
+    }
+}
+
+.text-sub{
+    font-size: $text-secundary;
+    font-weight: 500;
+}
+
+.text-banner-default{
+    font-size: $text-default;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.text-destac{
+    font-size: $text-secundary;
+    color: $color-secundary;
+}
+
+.text-default{
+    font-size: $text-secundary;
+    color: $color-primary;
+}
+
+.text-description{
+    font-size: $text-description;
+}

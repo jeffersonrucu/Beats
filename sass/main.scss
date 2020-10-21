@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+// Boostrap Sass
+@import "../assets/lib/bootstrap/scss/bootstrap.scss";
+
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -24,7 +27,8 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/button',
+  'components/img';
 
 // 6. Page-specific styles
 @import

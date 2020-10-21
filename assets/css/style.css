@@ -8171,6 +8171,23 @@ a.text-dark:hover, a.text-dark:focus {
   background: #000000;
   border-radius: 50%; }
 
+.register-email {
+  background: #F8F8F9;
+  padding: 10%; }
+  .register-email form .form-control {
+    margin-top: 40px;
+    border: 1px solid #BFBFBF;
+    border-radius: 18px;
+    width: 80%;
+    display: inline; }
+  .register-email form .button-default {
+    margin-top: 10px;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase; }
+
 .background-primary {
   background: #2B2835; }
 

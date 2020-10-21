@@ -1,0 +1,23 @@
+.register-email{
+    background:$color-gray-light;
+    padding: 10%;
+
+    form{
+        .form-control{
+            margin-top: 40px;
+            border:  1px solid #BFBFBF;
+            border-radius: 18px;
+            width: 80%;
+            display: inline;
+        }
+
+        .button-default{
+            margin-top: 10px;
+            width: 80%;
+            font-size: $title-size-button;
+            font-weight: 600;
+            line-height: 17px;
+            text-transform: uppercase;
+        }
+    }
+}

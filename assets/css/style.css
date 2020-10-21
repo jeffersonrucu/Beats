@@ -14,4 +14,49 @@
 .nav-img {
   margin-right: 50px; }
 
+.card-no-border {
+  border: none; }
+  .card-no-border button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 31px; }
+    .card-no-border button:hover, .card-no-border button:focus {
+      color: #ffffff;
+      text-decoration: none; }
+    .card-no-border button:focus {
+      box-shadow: none; }
+  .card-no-border a {
+    color: #B8B8B8;
+    font-size: 12px; }
+
+.background-primary {
+  background: #2B2835; }
+
+.background-secundary {
+  background: #FFC700; }
+
+.center-default {
+  max-height: 616px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px; }
+
+.background-secundary-img {
+  background-image: url(../../assets/img/fundo_Amarelo.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.background-primary-90 {
+  position: relative; }
+  .background-primary-90::before {
+    background: #2B2835;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1; }
+
 /*# sourceMappingURL=style.css.map */

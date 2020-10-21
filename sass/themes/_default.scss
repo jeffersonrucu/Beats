@@ -1,0 +1,39 @@
+.background-primary {
+    background:$color-primary;
+
+
+}
+
+.background-secundary {
+    background:$color-secundary;
+}
+
+
+.center-default {
+    max-height: 616px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.background-secundary-img {
+    background-image: url(../../assets/img/fundo_Amarelo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-primary-90 {
+    position: relative;
+
+    &::before {
+        background: #2B2835;
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        z-index: -1;
+    }
+}

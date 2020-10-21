@@ -1,0 +1,25 @@
+.card-no-border{
+    border: none;  
+
+    button{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: $title-footer-phone;
+
+        &:hover, 
+        &:focus{
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        &:focus{
+            box-shadow: none;
+        }
+
+    }
+
+    a{
+        color: $color-gray;
+        font-size: $text-footer-phone;
+    }
+}

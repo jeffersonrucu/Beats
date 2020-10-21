@@ -1,0 +1,24 @@
+.owl-theme{
+    .owl-dots{
+        .owl-dot.active{
+            span{
+                background: #000000;
+                border-radius: 50%;
+            }
+        }
+
+        .owl-dot{
+            
+            span{
+                background: #c8c8ca;
+            }
+
+            &:hover{
+                span{
+                    background: #000000;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

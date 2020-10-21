@@ -1,0 +1,22 @@
+.color-beats{
+    span{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:nth-child(1){
+            border: 1px solid #000000;
+            background: #ffffff;
+        }
+
+        &:nth-child(2){
+            background: #DD5656;
+        }
+
+        &:nth-child(3){
+            background: #000000;
+        }
+    }
+}

@@ -1,5 +1,5 @@
-.color-beats{
-    span{
+.color-beats {
+    span {
         width: 37px;
         height: 37px;
         border-radius: 50%;
@@ -18,5 +18,33 @@
         &:nth-child(3){
             background: #000000;
         }
+    }
+}
+
+.box-search {
+    background: rgba(25, 23, 32, 0.4) !important;
+    display: none;
+    justify-content: center;
+    min-height: 62px;
+
+    form {
+        justify-content: center;
+        padding: 8px;
+    }
+
+    button{
+        width: 150px;
+        color: #CCC;
+        border-color: #CCC;
+
+        &:hover{
+            color: #000;
+        background-color: #ffc107;
+        border-color: #ffc107;
+        }
+    }
+
+    .icon-b{
+        padding:5px
     }
 }

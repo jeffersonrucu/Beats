@@ -8072,7 +8072,8 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-default {
   background: rgba(25, 23, 32, 0.4) !important;
   padding-bottom: 0px;
-  padding-top: 0px; }
+  padding-top: 0px;
+  text-align: center; }
 
 .nav-link-default {
   color: #ffffff !important;
@@ -8083,7 +8084,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 90px; }
 
 .nav-img {
-  margin-right: 50px; }
+  margin-right: 95px; }
 
 .card-no-border {
   border: none; }
@@ -8113,6 +8114,25 @@ a.text-dark:hover, a.text-dark:focus {
     background: #DD5656; }
   .color-beats span:nth-child(3) {
     background: #000000; }
+
+.box-search {
+  background: rgba(25, 23, 32, 0.4) !important;
+  display: none;
+  justify-content: center;
+  min-height: 62px; }
+  .box-search form {
+    justify-content: center;
+    padding: 8px; }
+  .box-search button {
+    width: 150px;
+    color: #CCC;
+    border-color: #CCC; }
+    .box-search button:hover {
+      color: #000;
+      background-color: #ffc107;
+      border-color: #ffc107; }
+  .box-search .icon-b {
+    padding: 5px; }
 
 .img-size {
   width: 100%;

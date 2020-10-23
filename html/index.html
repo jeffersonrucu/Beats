@@ -25,7 +25,7 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-default">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-default" id="close">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="../assets/images/logo.png" alt="Logo">
@@ -50,10 +50,10 @@
                             </li>
                     
                             <li class="nav-item mt-1">
-                                <a class="nav-link nav-img" href="#">
+                                <a class="nav-link nav-img" id="search-open" href="#">
                                     
                                     <img src="../assets/images/busca.png" alt="">
-                    
+                                
                                 </a>
                             </li>
             
@@ -72,6 +72,15 @@
                     </div>
                 </div>
             </nav>
+            <div class="box-search fixed-top" id="open">
+                <a href="#">
+                    <img class="icon-b" src="../assets/images/logo.png" alt="Logo">
+                </a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="search-pesq" type="submit"><img src="../assets/images/busca.png" alt=""></button>
+                </form> 
+            </div>
         </header>
 
         <section class="background-primary-90">  
@@ -412,20 +421,6 @@
                 </div>
             </div>
         </section>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <footer class="background-primary mt-5">
             <div class="container">
@@ -443,7 +438,7 @@
                             </h2>
                         </div>
             
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse show"  aria-labelledby="headingOne" >
                             <div class="card-body background-primary">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -483,7 +478,7 @@
                             </h2>
                         </div>
             
-                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div id="collapseTwo" class="collapse show"  aria-labelledby="headingTwo" >
                             <div class="card-body background-primary">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -527,7 +522,7 @@
                             </h2>
                         </div>
             
-                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseThree" class="collapse show"  aria-labelledby="headingThree" >
                             <div class="card-body background-primary">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -571,7 +566,7 @@
                             </h2>
                         </div>
             
-                        <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div id="collapseFour" class="collapse show"  aria-labelledby="headingFour" >
                             <div class="card-body background-primary">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">

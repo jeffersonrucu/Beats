@@ -8182,6 +8182,14 @@ a.text-dark:hover, a.text-dark:focus {
   .sectionShop .card .ml-60 {
     margin-left: 36%; }
 
+[data-animescroll] {
+  opacity: 0;
+  transition: .3s; }
+
+.animate-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
 .owl-theme .owl-dots .owl-dot.active span {
   background: #000000;
   border-radius: 50%; }

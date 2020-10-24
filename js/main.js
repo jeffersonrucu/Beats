@@ -1,4 +1,5 @@
 window.onload = function(){
+  //filtro img
   var write = document.getElementById('button-color-write');
   var red = document.getElementById('button-color-red');
   var black = document.getElementById('button-color-black');
@@ -39,6 +40,46 @@ window.onload = function(){
   searchPesq.onclick = function(){
     boxNav.style.display = "flex";
     boxSearch.style.display = "none";
+  }
+
+  //animate
+  const debounce = function(func, wait, immediate) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      const later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  const AnimateElement = document.querySelectorAll('[data-animescroll]');
+  const animationClass = 'animate-scroll';
+
+  animeScroll();
+
+  if(AnimateElement.length){
+    window.addEventListener('scroll',debounce (function(){
+      animeScroll();
+    }, 100))
+  }
+
+  function animeScroll(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3)/4);
+    AnimateElement.forEach(function(elementScroll){
+      if((windowTop) > elementScroll.offsetTop){
+
+        elementScroll.classList.add(animationClass)
+      }else {
+        elementScroll.classList.remove(animationClass)
+      }
+    })
   }
 }
 

@@ -8089,16 +8089,22 @@ a.text-dark:hover, a.text-dark:focus {
 .box-search {
   background: rgba(25, 23, 32, 0.4) !important;
   display: none;
-  justify-content: space-around;
   min-height: 62px; }
   .box-search form {
     justify-content: center;
     padding: 8px;
     width: 90%; }
-    .box-search form input {
-      width: 40% !important; }
   .box-search .icon-b {
     padding: 5px; }
+  .box-search input {
+    width: 60% !important; }
+
+.box-search-iten {
+  display: block; }
+  @media (min-width: 768px) {
+    .box-search-iten {
+      display: flex;
+      justify-content: space-around; } }
 
 .card-no-border {
   border: none; }
@@ -8138,27 +8144,28 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #ffc107;
     border-color: #ffc107; }
 .box-search #search-close {
-  margin: 0 8px;
+  padding: 6.1px;
+  margin: 0 5px;
   position: relative; }
   .box-search #search-close:before {
     content: '';
     background-color: #FFF;
-    width: 2px;
+    width: 3px;
     height: 25px;
     display: block;
-    transform: rotate(140deg);
-    margin: 0 50%; }
+    top: 20px;
+    margin: 0 50%;
+    transform: rotate(140deg); }
   .box-search #search-close:after {
     content: '';
     background-color: #FFF;
-    width: 2px;
+    width: 3px;
     height: 25px;
     display: block;
-    transform: rotate(-140deg);
-    margin: 0 50%;
     position: absolute;
     top: 6px;
-    left: 0px; }
+    margin: 0 68px;
+    transform: rotate(-140deg); }
 
 .img-size {
   width: 100%;
@@ -8207,6 +8214,14 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 80%; }
   .sectionShop .card .ml-60 {
     margin-left: 36%; }
+
+[data-animescroll] {
+  opacity: 0;
+  transition: .3s; }
+
+.animate-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
 
 .owl-theme .owl-dots .owl-dot.active span {
   background: #000000;

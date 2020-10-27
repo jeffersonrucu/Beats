@@ -21,7 +21,7 @@
     }
 }
 
-.box-search {
+.box-search{
     button{
         width: 150px;
         color: #CCC;
@@ -35,32 +35,31 @@
     }
 
     #search-close{
-        margin: 0 8px;
+        padding: 6.1px;    
+        margin: 0 5px;
         position: relative;
 
         &:before{
             content: '';
             background-color: #FFF;
-            width: 2px;
+            width: 3px;
             height: 25px;
             display: block;
-            transform: rotate(140deg);
+            top: 20px;
             margin: 0 50%;
+            transform: rotate(140deg);
         }
 
         &:after{
             content: '';
             background-color: #FFF;
-            width: 2px;
+            width: 3px;
             height: 25px;
             display: block;
-            transform: rotate(-140deg);
-            margin: 0 50%;
             position: absolute;
             top: 6px;
-            left: 0px;
+            margin: 0 68px;
+            transform: rotate(-140deg);
         }
     }
-
-    
 }

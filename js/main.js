@@ -1,5 +1,4 @@
 window.onload = function(){
-  //filtro img
   var write = document.getElementById('button-color-write');
   var red = document.getElementById('button-color-red');
   var black = document.getElementById('button-color-black');
@@ -27,8 +26,20 @@ window.onload = function(){
     imageThree.src = '../assets/images/Bitmap_box_black_cima.png';
   }
 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //button Search
   var searchOpen = document.getElementById('search-open');
-  var searchPesq = document.getElementById('search-pesq');
+  var searchPesq = document.getElementById('search-close');
+
   var boxNav = document.getElementById('close');
   var boxSearch = document.getElementById('open');
 
@@ -41,7 +52,21 @@ window.onload = function(){
     boxNav.style.display = "flex";
     boxSearch.style.display = "none";
   }
+<<<<<<< HEAD
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   //animate
   const debounce = function(func, wait, immediate) {
     let timeout;
@@ -81,7 +106,17 @@ window.onload = function(){
       }
     })
   }
+=======
+>>>>>>> parent of 8165fdf... Cria Scroll animado javaSCript
 }
+
+
+
+
+
+
+
+
 
 $('.owl-carousel').owlCarousel({
   nav: false,

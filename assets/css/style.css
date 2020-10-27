@@ -8086,6 +8086,20 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-img {
   margin-right: 95px; }
 
+.box-search {
+  background: rgba(25, 23, 32, 0.4) !important;
+  display: none;
+  justify-content: space-around;
+  min-height: 62px; }
+  .box-search form {
+    justify-content: center;
+    padding: 8px;
+    width: 90%; }
+    .box-search form input {
+      width: 40% !important; }
+  .box-search .icon-b {
+    padding: 5px; }
+
 .card-no-border {
   border: none; }
   .card-no-border button {
@@ -8115,24 +8129,36 @@ a.text-dark:hover, a.text-dark:focus {
   .color-beats span:nth-child(3) {
     background: #000000; }
 
-.box-search {
-  background: rgba(25, 23, 32, 0.4) !important;
-  display: none;
-  justify-content: center;
-  min-height: 62px; }
-  .box-search form {
-    justify-content: center;
-    padding: 8px; }
-  .box-search button {
-    width: 150px;
-    color: #CCC;
-    border-color: #CCC; }
-    .box-search button:hover {
-      color: #000;
-      background-color: #ffc107;
-      border-color: #ffc107; }
-  .box-search .icon-b {
-    padding: 5px; }
+.box-search button {
+  width: 150px;
+  color: #CCC;
+  border-color: #CCC; }
+  .box-search button:hover {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107; }
+.box-search #search-close {
+  margin: 0 8px;
+  position: relative; }
+  .box-search #search-close:before {
+    content: '';
+    background-color: #FFF;
+    width: 2px;
+    height: 25px;
+    display: block;
+    transform: rotate(140deg);
+    margin: 0 50%; }
+  .box-search #search-close:after {
+    content: '';
+    background-color: #FFF;
+    width: 2px;
+    height: 25px;
+    display: block;
+    transform: rotate(-140deg);
+    margin: 0 50%;
+    position: absolute;
+    top: 6px;
+    left: 0px; }
 
 .img-size {
   width: 100%;
@@ -8181,14 +8207,6 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 80%; }
   .sectionShop .card .ml-60 {
     margin-left: 36%; }
-
-[data-animescroll] {
-  opacity: 0;
-  transition: .3s; }
-
-.animate-scroll {
-  opacity: 1;
-  transform: translate3d(0, 0, 0); }
 
 .owl-theme .owl-dots .owl-dot.active span {
   background: #000000;

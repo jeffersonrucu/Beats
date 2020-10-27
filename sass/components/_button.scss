@@ -22,16 +22,6 @@
 }
 
 .box-search {
-    background: rgba(25, 23, 32, 0.4) !important;
-    display: none;
-    justify-content: center;
-    min-height: 62px;
-
-    form {
-        justify-content: center;
-        padding: 8px;
-    }
-
     button{
         width: 150px;
         color: #CCC;
@@ -39,12 +29,38 @@
 
         &:hover{
             color: #000;
-        background-color: #ffc107;
-        border-color: #ffc107;
+            background-color: #ffc107;
+            border-color: #ffc107;
         }
     }
 
-    .icon-b{
-        padding:5px
+    #search-close{
+        margin: 0 8px;
+        position: relative;
+
+        &:before{
+            content: '';
+            background-color: #FFF;
+            width: 2px;
+            height: 25px;
+            display: block;
+            transform: rotate(140deg);
+            margin: 0 50%;
+        }
+
+        &:after{
+            content: '';
+            background-color: #FFF;
+            width: 2px;
+            height: 25px;
+            display: block;
+            transform: rotate(-140deg);
+            margin: 0 50%;
+            position: absolute;
+            top: 6px;
+            left: 0px;
+        }
     }
+
+    
 }

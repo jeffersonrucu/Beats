@@ -8,40 +8,35 @@ window.onload = function(){
   var imageTwo = document.getElementById('img-two');
   var imageThree = document.getElementById('img-three');
 
+  // write.onclick = function(){
+  //   imageOne.src = '../assets/images/Bitmap_box_white_frente.png';
+  //   imageTwo.src = '../assets/images/Bitmap_box_white_lado.png';
+  //   imageThree.src = '../assets/images/Bitmap_box_white_cima.png';
+  // }
+
+  // red.onclick = function(){
+  //   imageOne.src = '../assets/images/Bitmap_box_red.png';
+  //   imageTwo.src = '../assets/images/Bitmap_box_red_lado.png';
+  //   imageThree.src = '../assets/images/Bitmap_box_red_cima.png';
+  // }
+
+  // black.onclick = function(){
+  //   imageOne.src = '../assets/images/Bitmap_box_black_frente.png';
+  //   imageTwo.src = '../assets/images/Bitmap_box_black_lado.png';
+  //   imageThree.src = '../assets/images/Bitmap_box_black_cima.png';
+  // }
 
   write.onclick = function(){
-    imageOne.src = '../assets/images/Bitmap_box_white_frente.png';
-    imageTwo.src = '../assets/images/Bitmap_box_white_lado.png';
-    imageThree.src = '../assets/images/Bitmap_box_white_cima.png';
+    $('.owl-carousel').trigger('to.owl.carousel', 0);
   }
 
   red.onclick = function(){
-    imageOne.src = '../assets/images/Bitmap_box_red.png';
-    imageTwo.src = '../assets/images/Bitmap_box_red_lado.png';
-    imageThree.src = '../assets/images/Bitmap_box_red_cima.png';
+    $('.owl-carousel').trigger('to.owl.carousel', 3);
   }
 
   black.onclick = function(){
-    imageOne.src = '../assets/images/Bitmap_box_black_frente.png';
-    imageTwo.src = '../assets/images/Bitmap_box_black_lado.png';
-    imageThree.src = '../assets/images/Bitmap_box_black_cima.png';
+    $('.owl-carousel').trigger('to.owl.carousel', 6 );
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -50,12 +45,14 @@ window.onload = function(){
   var boxNav = document.getElementById('close');
   var boxSearch = document.getElementById('open');
 
-  searchOpen.onclick = function(){
+  searchOpen.onclick = function(event){
+    event.preventDefault();
     boxNav.style.display = "none";
     boxSearch.style.display = "flex";
   }
 
-  searchPesq.onclick = function(){
+  searchPesq.onclick = function(event){
+    event.preventDefault();
     boxNav.style.display = "flex";
     boxSearch.style.display = "none";
   }
@@ -156,3 +153,35 @@ $('.owl-carousel').owlCarousel({
 
 
 
+
+
+
+function collapseItem(event, nameCollapse) {
+  var eventButton = event.currentTarget;  //currentTarget pega o o elemento clicado 
+  var collapseContent = '#' + nameCollapse + 'Content';
+
+  //desk
+  if($(window).width() > 992) {
+    $(collapseContent).show();
+    $(eventButton).addClass('open');
+
+  } else {  //mobile
+    if($(eventButton).hasClass('open')) {
+      $(collapseContent).hide();
+      $(eventButton).removeClass('open');
+  
+    } else {
+      $(collapseContent).show();
+      $(eventButton).addClass('open');
+    }
+  }  
+};
+
+$('.btn-collapse').on('click', function(event){
+  var nameCollapse = $(this).attr('id');
+  collapseItem(event, nameCollapse);
+});
+
+$( window ).resize(function() {
+  $(".btn-collapse").trigger('click');
+}); 

@@ -2,8 +2,7 @@
 -----------
 ####Frameworks: :smirk:
 - Bootstrap
-- Slick
-- Parallax
+- OwlCarousel
 
 ----------------
 
